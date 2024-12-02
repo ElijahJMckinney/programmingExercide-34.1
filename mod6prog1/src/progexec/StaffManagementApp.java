@@ -12,9 +12,10 @@ import java.sql.*;
 public class StaffManagementApp extends Application {
 
     // Database connection details
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/your_database";
-    private static final String DB_USER = "your_username";
-    private static final String DB_PASSWORD = "your_password";
+    TextField tfUrl = new TextField("jdbc:mysql://localhost:3306/javatestdb");
+    TextField tfUser = new TextField("root");
+    PasswordField pfPassword = new PasswordField(); // Leave blank for default XAMPP setup
+
 
     // UI Components
     private TextField tfId = new TextField();
